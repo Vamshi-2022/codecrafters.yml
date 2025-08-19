@@ -1,0 +1,58 @@
+<!--Requirements to be added while doing forms-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/contact.me" method="post">
+        <label for="email">UserName: </label>
+        <input type="text" id="email" placeholder="Enter email" required="true"> <br>
+        <label for="user_pass">Password: </label>
+        <input type="password" placeholder="Enter password" id="user_pass"><br>
+        <input type="date"><br>
+        <label for="user_file">FileUpload: </label>
+        <input type="file" id="user_file"><br>
+        <label for="user_color">Color: </label>
+        <input type="color" id="user_color"><br>
+        <label for="user_range" >Range: </label>
+        <input type="range" id="user_range"><br>
+        <label for="user_poke">Poke Me: </label>
+        <input type="button" value="poked"><br>
+        <!--multiple choices choose only one option-->
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="Male"><br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="Female"><br>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender" value="Other"><br>
+        <!--Checkboxes choose more than one answer-->
+        
+        <label for="c">C</label>
+        <input type="checkbox" name="lang" id="c" value="c"><br>
+        <label for="java">Java</label>
+        <input type="checkbox" name="lang" id="java" value="java"><br>
+        <label for="python">Python</label>
+        <input type="checkbox" name="lang" id="python" value="Python"><br>
+        <!--Select from a dropdown button-->
+        <label for="fruits">Choose a fruit: </label>
+        <select id="fruits" name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+            <option value="other">Other fruit</option>
+        </select><br>
+        <!--Used for writing the caption-->
+        <caption>This is the write. Write your story</caption>
+        <textarea name="story" id="story" rows="4" cols="40">
+            Please Write a story
+        </textarea><br>
+        <!--IFrame Tag: used to load a particular website lets do this by adding a youtube video-->
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/ymCpmq5F5PE?si=2_Wkm9VwBMVfg4gd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+        <iframe src="https://www.nperf.com/en/" height="300" width="300"></iframe>
+            <input type="Submit" value="Submit✅">
+    </form>
+</body>   
+</html>
